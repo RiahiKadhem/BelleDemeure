@@ -1,0 +1,1179 @@
+/* ======================================================================  M O B I L E  ====================================================================== */
+
+/* ================================================ INDEX (ACCUEIL) ================================================ */
+
+/* ================================================ BODY ================================================ */
+
+h1, h2, h3 {
+    font-family: "Sofia", sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+body>div#container_navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    width: 99%;
+    /*min-width: 729px;*/
+    margin: auto;
+    top: 4px;
+    padding-bottom: 5px;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+body>div#container_navbar>#header_logo {
+    order: 1;
+    width: 100px;
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+body>div#container_navbar>#burger_menu_mobile {
+    order: 0;
+    padding-left: 25px;
+}
+
+body>div#container_navbar>#burger_menu_mobile>span:first-of-type {
+    display: block;
+    height: 10px;
+    padding: 5px;
+}
+
+body>div#container_navbar>#burger_menu_mobile>span:nth-of-type(2) {
+    display: block;
+    width: 28px;
+    height: 6px;
+    border-top: solid 3px rgb(100, 100, 100);
+    border-bottom: solid 3px rgb(100, 100, 100);
+}
+
+body>div#container_navbar>#burger_menu_mobile>span:nth-of-type(3) {
+    display: block;
+    width: 28px;
+    height: 6px;
+    border-bottom: solid 3px rgb(100, 100, 100);
+}
+
+body>div#container_navbar>nav#nav_menu {
+    display: none;
+}
+
+body>div#container_navbar>nav#nav_menu>#ul_nav_menu {
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+}
+
+body>div#container_navbar>nav>#ul_nav_menu>li {
+    margin-top: 5px;
+}
+
+body>div#container_navbar>nav>#ul_nav_menu>li>a {
+    text-decoration: none;
+    padding-top: 21px;
+    padding-right: 15px;
+    padding-bottom: 22px;
+    padding-left: 15px;
+    color: rgb(63, 63, 63);
+}
+
+body>div#container_navbar>#search_div {
+    display: flex;
+    order: 2;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+body>div#container_navbar>#search_div>#searchbox {
+    display: none;
+}
+
+body>div#container_navbar>#search_div>#search_logo {
+    width: 25px;
+    height: 21px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+body>div#container_navbar>nav>#ul_nav_menu>li>a:link {
+    color: rgb(0, 0, 0);
+}
+
+body>div#container_navbar>nav>#ul_nav_menu>li>a:visited {
+    color: rgb(136, 136, 136);
+}
+
+body>div#container_navbar>nav>#ul_nav_menu>li>a:hover {
+    background-color: #86271a;
+    color: rgb(230, 230, 230);
+}
+
+body>div#container_navbar>nav>#ul_nav_menu>li>a.active {
+    background-color: rgb(63, 63, 63);
+    color: rgb(230, 230, 230);
+}
+
+#chat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    z-index: 2;
+    background-color: green;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+/* ================================================ HEADER ================================================ */
+
+header {
+    position: relative;
+    bottom: 60px;
+    width: 100%;
+    height: 100vh;
+    /*min-width: 729px;*/
+    min-height: 750px;
+    background-image: url("../images/maisons/accueil_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header>div#email_div {
+    position: absolute;
+    width: 100%;
+    top: calc((100%) / 2);
+    left: calc((100% - 100% - 2px) / 2);
+    text-align: center;
+}
+
+header>div#email_div>#email_connexion {
+    width: 300px;
+    height: 25px;
+    font-size: 17px;
+}
+
+header>div#email_div>#email_connexion_button, #inscription_button {
+    display: inline-block;
+    color: white;
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+header>div#inscription_div {
+    position: absolute;
+    width: 350px;
+    top: calc((100% + 150px) / 2);
+    left: calc((100% - 350px) / 2);
+    text-align: center;
+}
+
+header>div#inscription_div {
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+header>div#inscription_div>#house_search_fieldset>#inscription_button {
+    margin: 15px;
+}
+
+header>div#about_us_div {
+    position: absolute;
+    width: 96%;
+    height: auto;
+    top: calc((100% - 25%));
+    left: calc((100% - 100%) / 2);
+    margin-left: calc(100% - 98%);
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.6);
+    color: rgb(30, 30, 30);
+    box-shadow: 10px 10px 5px rgba(90, 90, 90, 0.6);
+}
+
+/* ================================================ MAIN ================================================ */
+
+main>#house_search {
+    position: relative;
+    margin-top: 0px;
+}
+
+main #house_search_fieldset {
+    height: 90px;
+}
+
+main>#house_search_inputsearch {
+    display: flex;
+}
+
+main>#house_search #house_search_principalsearch {
+    width: 400px;
+}
+
+main>#house_search #house_search_minprince, #house_search_maxprince {
+    width: 100px;
+}
+
+main>#house_search #house_search_filters {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+
+main>#house_search #house_search_submit {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    cursor: pointer;
+}
+
+main>#house_search #house_search_submit>#house_search_search_logo {
+    width: 25px;
+    height: 21px;
+}
+
+main>#house_search #house_search_submit>#house_search_search_span {
+    position: absolute;
+    top: 3px;
+    left: 30px;
+}
+
+main>#carousel_nouveautes {
+    position: relative;
+    overflow: hidden;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    opacity: 0.9;
+    background: rgb(10, 10, 10);
+}
+
+main>#carousel_nouveautes #carousel_nouveautes_container>img {
+    width: 1000px;
+    height: 700px;
+}
+
+main>#carousel_nouveautes #carousel_nouveautes_title {
+    position: absolute;
+    width: 100%;
+    font-size: 23px;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+}
+
+main>#carousel_nouveautes #carousel_nouveautes_title>p {
+    margin: 15px;
+}
+
+/* POUR METTRE LE CAROUSEL EN PAUSE, LORS DU SURVOL DU CURSEUR : */
+
+/*
+#carousel_nouveautes_container:hover {
+    animation-play-state: paused;
+}
+*/
+
+#carousel_nouveautes_container {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    animation-name: slider;
+    animation-duration: 500s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateY(0px);
+    }
+    90% {
+        transform: translateY(-13375px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*--------*/
+
+.slider_locaux {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.slider_locaux_titre {
+    margin-top: 90px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
+}
+
+.slider_locaux div>img {
+    width: 260px;
+}
+
+.slides_locaux {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides_locaux::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides_locaux::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+.slides_locaux::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides_locaux>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #eee;
+    box-shadow: 10px 10px 5px rgba(90, 90, 90, 0.6);
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.slides_locaux>div>p:first-of-type {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slides_locaux>div>p:nth-of-type(2) {
+    width: 100%;
+    font-size: 10px;
+}
+
+.slider_locaux>a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slider_locaux>a:active {
+    top: 1px;
+    color: #1c87c9;
+}
+
+.slider_locaux>a:focus {
+    background: #eee;
+}
+
+/*--------*/
+
+.slider_questions {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.slider_questions_titre {
+    margin-top: 90px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
+}
+
+.slider_questions div>img {
+    width: 260px;
+}
+
+.slides_questions {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides_questions::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides_questions::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+.slides_questions::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides_questions>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 250px;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 10px 10px 5px rgba(90, 90, 90, 0.6);
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.slides_questions>div>p:first-of-type {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slides_questions>div>p:nth-of-type(2) {
+    width: 100%;
+    font-size: 10px;
+}
+
+.slider_questions>a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slider_questions>a:active {
+    top: 1px;
+    color: #1c87c9;
+}
+
+.slider_questions>a:focus {
+    background: #eee;
+}
+
+/*--------*/
+
+/* ================================================ FOOTER ================================================ */
+
+footer {
+    background-color: rgb(41, 40, 40);
+    color: blanchedalmond;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+img[alt^="logo"] {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+img[alt="logo"] {
+    width: 150px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+footer>div:first-child {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    margin-right: 10px;
+}
+
+footer>div:first-child>div {
+    position: absolute;
+    right: 5px;
+    top: 50px
+}
+
+footer>p:first-of-type {
+    width: 25%;
+}
+
+footer>p:first-of-type>img {
+    float: left;
+    padding-right: 8px;
+}
+
+footer>div>p {
+    display: inline-block;
+}
+
+footer>p {
+    color: darkkhaki;
+    margin-left: 10px;
+}
+
+footer>div:nth-of-type(3) {
+    border: blanchedalmond 2px solid;
+    border-radius: 2px;
+    display: inline-block;
+    width: 33vw;
+    height: 290px;
+    margin-left: 5vw;
+    position: absolute;
+    top: 180px;
+    overflow-y: scroll;
+    color: darkkhaki;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 2px solid darkkhaki;
+}
+
+footer>div:nth-of-type(3)>div>a {
+    color: blanchedalmond;
+}
+
+footer>div:nth-of-type(3)>div {
+    display: inline-block;
+    width: 15vw;
+    height: 150px;
+    margin-left: 10px;
+}
+
+div.footer:nth-of-type(4) {
+    border: blanchedalmond 2px solid;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    right: 2vw;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    height: 25px;
+    width: 120px;
+    top: 180px;
+    transition: 0.3s;
+}
+
+div.footer:nth-of-type(4)>img {
+    position: relative;
+    top: 8px;
+}
+
+div.footer:nth-of-type(5) {
+    border: blanchedalmond 2px solid;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    right: 2vw;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    height: 25px;
+    width: 120px;
+    top: 250px;
+    transition: 0.3s;
+}
+
+div.footer:nth-of-type(4):hover {
+    background-color: rgba(133, 126, 126, 0.568);
+}
+
+div.footer:nth-of-type(5):hover {
+    background-color: rgba(133, 126, 126, 0.568);
+}
+
+div.footer:nth-of-type(5)>img {
+    position: relative;
+    top: 8px;
+    right: 5px;
+}
+
+div.footer:nth-of-type(6) {
+    display: inline-block;
+    position: absolute;
+    margin-left: 41vw;
+    top: 360px;
+    width: 150px;
+    color: darkkhaki;
+}
+
+div.footer:nth-of-type(7) {
+    color: darkkhaki;
+    display: inline-block;
+    position: absolute;
+    margin-left: 41vw;
+    top: 385px;
+    width: 100px;
+}
+
+/* ====================== google map ========================== */
+
+iframe#gmap_canvas {
+    width: 25vw;
+    height: 200px;
+}
+
+footer>div.mapouter {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    height: 250px;
+    width: 25vw;
+    margin-left: 10px;
+}
+
+/* ================================================ FICHE DETAILS ================================================ */
+
+/* ================================================ MOBILE ================================================ */
+
+main>#details_container {
+    margin-bottom: 30px;
+}
+
+main #house_for_sale_title_address {
+    position: relative;
+    margin-top: 0px;
+}
+
+main #house_for_sale_title_address_fieldset {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+main #house_for_sale_title_address_fieldset>div>h1 {
+    margin-top: 4px;
+}
+
+main #house_for_sale_title_address_fieldset>#price {
+    width: 210px;
+    margin-top: -7px;
+    margin-right: -13px;
+    padding-top: 43px;
+    padding-bottom: 65px;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.switch_title {
+    display: block;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    color: #e4e4e4;
+    background: #6b6b6b;
+    cursor: pointer;
+    border: solid 1px rgb(36, 36, 36);
+    border-radius: 5px;
+    transition: all 0.25s ease-out;
+}
+
+.switch_title:hover {
+    background-color: #555;
+    color: #7c97d6;
+}
+
+.switch_title::before {
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+}
+
+.accordeon_container .accordeon_contenu1, .accordeon_contenu2, .accordeon_contenu3 {
+    background: rgba(206, 204, 204, 0.2);
+    border-bottom: 1px solid rgba(250, 224, 66, .45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 5px rgba(90, 90, 90, 0.6);
+}
+
+.accordeon_container {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.switch:checked+.switch_title+.accordeon_container {
+    max-height: 100vh;
+}
+
+.switch:checked+.switch_title::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.switch:checked+.switch_title {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.accordeon #house_for_sale_gallery {
+    text-align: center;
+}
+
+.accordeon #house_for_sale_gallery_principal>img {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px rgba(90, 90, 90, 0.6);
+}
+
+.accordeon #house_for_sale_gallery_secondary>img {
+    width: 200px;
+    height: 130px;
+    transition-property: all;
+    transition: all 1s ease;
+}
+
+.accordeon #house_for_sale_gallery>img:hover {
+    cursor: pointer;
+}
+
+.accordeon #house_for_sale_gallery_secondary>img:hover {
+    transform: scale(1.1);
+}
+
+.accordeon_contenu2 {
+    display: grid;
+    grid-template-areas: "annee_const style_bat" "superficie_hab superficie_terr" "suppl suppl" "desc desc";
+}
+
+.accordeon_contenu2>#desc {
+    margin-top: 50px;
+}
+
+.accordeon_contenu2>#annee_const {
+    grid-area: annee_const;
+}
+
+.accordeon_contenu2>#style_bat {
+    grid-area: style_bat;
+}
+
+.accordeon_contenu2>#superficie_hab {
+    grid-area: superficie_hab;
+}
+
+.accordeon_contenu2>#superficie_terr {
+    grid-area: superficie_terr;
+}
+
+.accordeon_contenu2>#suppl {
+    grid-area: suppl;
+}
+
+.accordeon_contenu2>#desc {
+    grid-area: desc;
+}
+
+/* ================================================ FORMULAIRE ================================================ */
+
+/* ================================================ MOBILE ================================================ */
+
+main {
+    margin-top: 20px;
+}
+
+div.form:first-of-type>div {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.form:first-of-type {
+    margin-left: 20px;
+}
+
+div.form:first-of-type>img[alt="maison1"] {
+    width: 80vw;
+    height: 50vh;
+    transition: 1s;
+}
+
+div.form:first-of-type>div>img[alt^="maison1-"] {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    transition: 1s;
+}
+
+.form>main>div.form:nth-of-type(2) {
+    width: 80%;
+    margin: auto;
+    margin-left: 85px;
+    margin-top: 15px;
+}
+
+main>div.form>div.gmap_canvas {
+    width: 100%;
+}
+
+.form>main>form {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.form>main>form>* {
+    display: inline-block;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.form>main>form>input, .form>main>form>select, .form>main>form>textarea {
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form>main>form>div>label {
+    display: inline-block;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.form>main>form>label:nth-of-type(6) {
+    display: inline-block;
+    width: 200px;
+}
+
+.form>main>form>fieldset>div>label {
+    display: inline-block;
+    width: 100px;
+}
+
+.form>main>form>input[type="number"] {
+    display: inline-block;
+    width: 50px;
+}
+
+.form>main>form>fieldset {
+    border-radius: 10px;
+    width: 75%;
+}
+
+.form>main>form>fieldset>div>input[type="date"] {
+    width: 200px;
+}
+
+.form>div>img:hover {
+    transform: scale(2);
+}
+
+.form>main>h1 {
+    text-align: center;
+}
+
+/* ================================================ catalogue ================================================ */
+
+body.catalogue>div.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 80vw;
+    height: 30vh;
+    margin-left: 10%;
+    margin-top: 5vh;
+    border: double;
+    border-radius: 5px;
+}
+
+body.catalogue>div.container:nth-of-type(1) {
+    background-image: url("../images/maisons/carousel_nouveautes01.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(2) {
+    background-image: url("../images/maisons/carousel_nouveautes02.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(3) {
+    background-image: url("../images/maisons/carousel_nouveautes03.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(4) {
+    background-image: url("../images/maisons/carousel_nouveautes04.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(5) {
+    background-image: url("../images/maisons/carousel_nouveautes05.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(6) {
+    background-image: url("../images/maisons/carousel_nouveautes06.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(7) {
+    background-image: url("../images/maisons/carousel_nouveautes07.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(8) {
+    background-image: url("../images/maisons/carousel_nouveautes08.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(9) {
+    background-image: url("../images/maisons/carousel_nouveautes09.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(10) {
+    background-image: url("../images/maisons/carousel_nouveautes10.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(11) {
+    background-image: url("../images/maisons/carousel_nouveautes11.jpg");
+}
+
+body.catalogue>div.container:nth-of-type(12) {
+    background-image: url("../images/maisons/maison1-1.jpg");
+}
+
+body.catalogue>div.container>div {
+    width: 100%;
+    height: 92%;
+    background-color: rgba(133, 126, 126, 0.568);
+    visibility: visible;
+}
+
+body.catalogue>div.container>div:hover {
+    visibility: hidden;
+}
+
+body.catalogue>div.container>div>p {
+    padding: 5px;
+    margin-top: 90px;
+}
+
+body.catalogue>div.container>div>p, body.catalogue>div.container>div>h3 {
+    color: white;
+}
+
+body.catalogue>h1 {
+    margin-left: 35vw;
+}
+
+/* ======================================================================  T A B L E T  ====================================================================== */
+
+@media only screen and (min-width:768px) {
+    /* ================================================ INDEX (ACCUEIL) ================================================ */
+    /* ================================================ HEADER ================================================ */
+    body {
+        width: 90%;
+    }
+    body>div#container_navbar>#header_logo {
+        order: 0;
+    }
+    body>div#container_navbar>#burger_menu_mobile {
+        display: none;
+    }
+    body>div#container_navbar>nav#nav_menu {
+        display: block;
+        order: 1;
+    }
+    body>div#container_navbar>#searchbox_div {
+        display: block;
+        order: 2;
+    }
+    body>div#container_navbar>#search_div>#searchbox {
+        display: inline-block;
+        width: 120px;
+        height: 22px;
+    }
+    /* ================================================ MAIN ================================================ */
+    main>#house_search #house_search_principalsearch {
+        width: calc(100% - 200px - 10%);
+    }
+    /* ================================================ FOOTER ================================================ */
+    footer>div:nth-of-type(3) {
+        width: 25vw;
+        height: 230px;
+        left: 25vw;
+        height: 245px;
+    }
+    div.footer:nth-of-type(4) {
+        right: 60px;
+        width: 150px;
+        padding-left: 50px;
+    }
+    div.footer:nth-of-type(5) {
+        right: 60px;
+        width: 150px;
+        padding-left: 50px;
+    }
+    div.footer:nth-of-type(6) {
+        right: 10.2;
+        top: 350px;
+    }
+    div.footer:nth-of-type(7) {
+        right: 4vw;
+        top: 380px;
+        width: 200px;
+    }
+    /* ================================================ FICHE DETAILS ================================================ */
+    .accordeon_contenu2 {
+        display: grid;
+        grid-template-areas: "annee_const style_bat suppl" "superficie_hab superficie_terr suppl" "desc desc desc";
+    }
+    /* ================================================ RENDEZ-VOUS ================================================ */
+    div.form:first-of-type>img[alt="maison1"] {
+        width: 50vw;
+        display: block;
+    }
+    div.form:first-of-type>div>img[alt^="maison1-"] {
+        width: 10vw;
+        height: 100px;
+        margin-top: 30px;
+    }
+    .form>main>div.form:nth-of-type(2) {
+        display: inline-block;
+    }
+    .form>main>form {
+        margin-left: 0;
+    }
+    .form>main>form>input, .form>main>form>select, .form>main>form>textarea {
+        width: 20vw;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .form>main>form>label {
+        display: block;
+    }
+    .form>main>form>fieldset {
+        display: block;
+        width: 40vw;
+    }
+    /* ================================================ catalogue ================================================ */
+    body.catalogue>div.container {
+        width: 35%;
+        display: inline-block;
+        margin-left: 100px;
+    }
+}
+
+/* ======================================================================  D E S K T O P  ====================================================================== */
+
+@media only screen and (min-width:1280px) {
+    /* ================================================ BODY ================================================ */
+    body {
+        width: 80%;
+    }
+    body>div#container_navbar>#search_div {
+        margin-right: 15px;
+    }
+    body>div#container_navbar>nav>#ul_nav_menu>li>a {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    /* ================================================ HEADER ================================================ */
+    body>div#container_navbar>#search_div>#searchbox {
+        width: 200px;
+    }
+    /* ================================================ FOOTER ================================================ */
+    footer>div:nth-of-type(3) {
+        width: 25vw;
+        height: 230px;
+        left: 25vw;
+    }
+    div.footer:nth-of-type(4) {
+        right: 100px;
+        width: 150px;
+        padding-left: 50px;
+    }
+    div.footer:nth-of-type(5) {
+        right: 100px;
+        width: 150px;
+        padding-left: 50px;
+    }
+    div.footer:nth-of-type(6) {
+        right: 10.2vw;
+        top: 350px;
+    }
+    div.footer:nth-of-type(7) {
+        right: 0.5vw;
+        top: 380px;
+        width: 300px;
+    }
+    /* ================================================ catalogue ================================================ */
+    body.catalogue>div.container {
+        width: 20%;
+    }
+}

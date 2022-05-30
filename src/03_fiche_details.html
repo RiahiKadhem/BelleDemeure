@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/belledemeure.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container_navbar">
+        <img id="header_logo" src="../images/logos/logo.png" alt="belledemeure_logo">
+        <nav id="burger_menu_mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+        <nav id="nav_menu">
+            <ul id="ul_nav_menu">
+                <li>
+                    <a id="nav_menu_accueil" href="../src/index.html">Accueil</a>
+                </li>
+                <li>
+                    <a id="nav_menu_catalogue" href="../src/02_catalogue.html">Catalogue</a>
+                </li>
+                <li>
+                    <a id="nav_menu_details" href="../src/03_fiche_details.html" class="active">Fiche détails</a>
+                </li>
+                <li>
+                    <a id="nav_menu_rendezvous" href="../src/04_rendez_vous.html">Rendez-vous</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="search_div">
+            <input id="searchbox" type="search" placeholder="recherche" />
+            <img id="search_logo" src="../images/logos/search.png" alt="belledemeure_search">
+        </div>
+    </div>
+
+    <div id="chat">
+        <span>chat</span>
+    </div>
+
+    <header>
+        <div id="email_div">
+            <input id="email_connexion" type="email" placeholder="monadressecourrielici@email.com" />
+            <a href="#" id="email_connexion_button">OK</a>
+        </div>
+        <div id="inscription_div">
+            <fieldset id="house_search_fieldset">
+                <legend>Vous n'êtes pas encore inscrit ?</legend>
+                <a href="#" id="inscription_button">Inscription</a>
+            </fieldset>
+        </div>
+        <div id="about_us_div">
+            <h3>Quelques mots à propos de nous</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique placerat nisl, vel consectetur lacus fermentum et. Duis tempus ac erat vel lacinia. Mauris tincidunt sit amet lorem a fringilla. Fusce blandit consectetur libero sit amet tincidunt. Vivamus egestas risus fringilla neque feugiat porta. Fusce maximus, orci sit amet ultricies faucibus, augue urna tincidunt libero, sit amet consectetur est ligula eu magna.</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="details_container">
+
+            <div id="house_for_sale_title_address">
+                <fieldset id="house_for_sale_title_address_fieldset">
+                    <div>
+                        <h1>Maison à vendre</h1>
+                        <p>2100 Boulevard de Maisonneuve Est, Montréal, QC H2K 4S1 - Canada</p>
+                    </div>
+                    <div id="price">
+                        <span>524 900.00 $</span>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="accordeon">
+                <input id="accordeon_1" class="switch" type="checkbox">
+                <label for="accordeon_1" class="switch_title">Photos</label>
+                <div class="accordeon_container">
+                    <div class="accordeon_contenu1">
+                        <div id="house_for_sale_gallery">
+                            <div id="house_for_sale_gallery_principal">
+                                <img src="../images/maisons/details_galerie_maison05.jpg" alt="details_galerie_maison_05" />
+                            </div>
+                            <div id="house_for_sale_gallery_secondary">
+                                <img src="../images/maisons/details_galerie_maison02.jpg" alt="details_galerie_maison_02" />
+                                <img src="../images/maisons/details_galerie_maison03.jpg" alt="details_galerie_maison_03" />
+                                <img src="../images/maisons/details_galerie_maison04.jpg" alt="details_galerie_maison_04" />
+                                <img src="../images/maisons/details_galerie_maison01.jpg" alt="details_galerie_maison_01" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordeon">
+                <input id="accordeon_2" class="switch" type="checkbox">
+                <label for="accordeon_2" class="switch_title">Caractéristiques</label>
+                <div class="accordeon_container">
+                    <div class="accordeon_contenu2">
+                        <div id="annee_const">
+                            <h3>Année de construction</h3>
+                            <span>1990</span>
+                        </div>
+                        <div id="style_bat">
+                            <h3>Style de bâtiment</h3>
+                            <span>À étages, Détaché</span>
+                        </div>
+                        <div id="superficie_hab">
+                            <h3>Superface habitable</h3>
+                            <span>245 mètres carré</span>
+                        </div>
+                        <div id="superficie_terr">
+                            <h3>Superficie du terrain</h3>
+                            <span>6 357 mètres carré</span>
+                        </div>
+                        <div id="suppl">
+                            <h3>Détails supplémentaires</h3>
+                            <li>16 pièces</li>
+                            <li>5 chambres</li>
+                            <li>3 salles de bain</li>
+                        </div>
+                        <div id="desc">
+                            <h3>Description</h3>
+                            <p>Vestibulum ut nisl nibh. Integer id accumsan enim. Curabitur at neque vitae est iaculis vulputate a eget orci. Sed scelerisque nulla eu mattis malesuada. Pellentesque ex nibh, ullamcorper id gravida vitae, vestibulum vitae justo. Phasellus lorem velit, mattis at enim sagittis, semper volutpat nisi. Mauris rutrum libero eget ultricies rhoncus. Nam efficitur turpis ac leo efficitur tempor.</p>
+                            <p>Aliquam mi augue, commodo condimentum quam vitae, eleifend vestibulum velit. Morbi id hendrerit tellus. Sed lacinia ligula eu aliquet bibendum. Donec in scelerisque erat, gravida semper justo. Fusce suscipit dignissim consectetur. Suspendisse congue semper sollicitudin. Donec vel erat nisl. Nam lorem enim, malesuada vel mi at, tincidunt tincidunt justo. Curabitur sed erat pulvinar, pulvinar tellus eu, convallis mi.</p>
+                            <p>Nulla cursus erat lectus, accumsan rhoncus dolor luctus at. Fusce convallis libero sed elit euismod, at interdum purus posuere. In viverra in diam ut pulvinar. Maecenas volutpat, odio pellentesque iaculis laoreet, lacus turpis euismod velit, vel fringilla tellus augue sed lorem. Sed vulputate augue eget turpis porttitor aliquam. Integer dignissim purus id eleifend cursus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordeon">
+                <input id="accordeon_3" class="switch" type="checkbox">
+                <label for="accordeon_3" class="switch_title">Localisation</label>
+                <div class="accordeon_container">
+                    <div class="accordeon_contenu3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu tortor, vehicula quis dolor quis, vehicula cursus nisi. Vestibulum quis lobortis turpis, eget congue mauris. Vestibulum euismod enim quis porttitor viverra. Donec tristique eros eu suscipit scelerisque. Nunc pharetra quam lacus, et maximus tellus ultrices eget. Nunc eget nisl euismod, sollicitudin quam sed, ultricies eros. Vestibulum vitae sem id ipsum viverra consequat. Duis sed imperdiet justo. Integer commodo ligula a libero tincidunt porttitor. Nam dictum, ex sit amet fermentum blandit, felis mi pretium nulla, non semper est turpis nec dui. Ut pulvinar sem in nisl gravida, sed suscipit augue venenatis.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <img src="../images/logos/blancs/logo2.png" alt="logo">
+            <div class="footer">
+                <a href="https://www.facebook.com/"><img src="../images/logos/blancs/logo-facebook.png" alt="logo-facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../images/logos/blancs/logo-instagram.png" alt="logo-instagram"></a>
+                <a href="https://www.twitter.com/"><img src="../images/logos/blancs/logo-twitter.png" alt="logo-twitter"></a>
+            </div>
+        </div>
+        <hr>
+        <p class="footer"><img src="../images/logos/blancs/logo-adresse.png" alt="logo-adresse">
+            2100 Boul. de Maisonneuve E, Montréal, QC H2K 4S1
+        </p>
+        <div class="mapouter">
+            <div class="gmap_canvas"></div><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=isi%20montreal&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://123movies-to.org"></a><br>
+            <a href="https://www.embedgooglemap.net"></a>
+        </div>
+        <div class="footer" id="partenaires">
+            <div class="footer">
+                <p>Agences partenaires </p>
+                <a href="https://www.seloger.com/">
+                    <p>SeLoger.com</p>
+                </a>
+                <a href="https://www.stephaneplazaimmobilier.com/">
+                    <p>StephanePlaza.com</p>
+                </a>
+
+                <a href="https://www.ladresse.com/">
+                    <p>L'adresse.com</p>
+                </a>
+                <a href="https://www.leboncoin.fr/">
+                    <p>Leboncoin.fr</p>
+                </a>
+                <a href="https://www.pap.fr/">
+                    <p>PAP.fr</p>
+                </a>
+                <a href="https://www.century21.fr/">
+                    <p>Century21.fr</p>
+                </a>
+                <a href="https://www.orpi.com/">
+                    <p>Orpi.com</p>
+                </a>
+                <a href="https://www.immodefrance.com/">
+                    <p>Immodefrance.com</p>
+                </a>
+                <a href="https://www.laforet.com/">
+                    <p>Laforet.com</p>
+                </a>
+                <a href="https://www.erafrance.com/">
+                    <p>Erafrance.com</p>
+                </a>
+            </div>
+        </div>
+        <div class="footer"><img src="../images/logos/blancs/logo-phone.png" alt="logo-phone">Telephone</div>
+        <div class="footer"><img src="../images/logos/blancs/logo-email.png" alt="logo-email">Courriel</div>
+        <div class="footer">Horaires d'ouverture :</div>
+        <div class="footer">du lundi au vendredi : de 09:00 a 18:00</div>
+
+    </footer>
+
+</body>
+
+</html>
